@@ -1,0 +1,36 @@
+.burger {
+   position: relative;
+   width: 44px;
+   height: 44px;
+   border: 1px solid rgba(255, 255, 255, 0.08);
+   border-radius: 10px;
+   display: none;
+
+   @include high-tablet {
+      display: block;
+   }
+
+   &__line {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      width: 26px;
+      height: 2px;
+      background-color: var(--white-color);
+      border-radius: 100px;
+      transform: translateX(-50%) translateY(-50%);
+
+      &:first-child {
+         margin-top: -8px;
+      }
+
+      &:last-child {
+         width: 13px;
+         margin-top: 7px;
+         left: 9px;
+         transform: translateY(0);
+      }
+
+   }
+}

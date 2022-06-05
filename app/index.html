@@ -19,23 +19,27 @@
 <body class="page__body">
    <div class="site-container">
       <header class="header">
-  <div class="container-fluid header__container">
-     <a href="#" class="logo">
+   <div class="container-fluid header__container">
+      <a href="#" class="logo">
          <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="logotype Robo-school">
-     </a>
-     <nav class="nav">
-        <ul class="list__reset nav__list" title="Главное Меню">
-           <li class="nav__item"><a href="#about" class="nav__link data-scroll">О школе</a></li>
-           <li class="nav__item"><a href="#trainers" class="nav__link data-scroll">Тренеры</a></li>
-           <li class="nav__item"><a href="#tariffs" class="nav__link data-scroll">Стоимость</a></li>
-        </ul>
-     </nav>
-     <a href="tel:+78000001122" class="phone">+7 (800-00) 0-11-22</a>
-  </div>
+      </a>
+      <nav class="nav">
+         <ul class="list__reset nav__list" title="Главное Меню">
+            <li class="nav__item"><a href="#about" class="nav__link data-scroll">О школе</a></li>
+            <li class="nav__item"><a href="#trainers" class="nav__link data-scroll">Тренеры</a></li>
+            <li class="nav__item"><a href="#tariffs" class="nav__link data-scroll">Стоимость</a></li>
+         </ul>
+      </nav>
+      <a href="tel:+78000001122" class="phone  header__phone">+7 (800-00) 0-11-22</a>
+      <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+         <span class="burger__line"></span>
+         <span class="burger__line"></span>
+         <span class="burger__line"></span>
+      </button>
+   </div>
 </header>
-
       <main class="main">
-            <section class="hero">
+         <section class="hero">
    <div class="container hero__container">
       <div class="hero__content">
          <h1 class="hero__title">
@@ -46,9 +50,16 @@
          </h1>
          <a href="#tariffs" class="hero__link btn data-scroll">Записаться на курс</a>
       </div>
+      <div class="hero__image">
+         <picture>
+            <source srcset="img/hero-image.png" type="image/avif">
+            <source srcset="img/hero-image.png" type="image/webp">
+            <img loading="lazy" src="img/hero-image.png" class="image" width="783" height="917" alt="Девушка">
+         </picture>
+      </div>
    </div>
 </section>
-            <section class="about section-offset" id="about">
+         <section class="about section-offset" id="about">
    <div class="container">
       <h2 class="visually-hidden">О школе Robo-school</h2>
       <p class="about__descr">
@@ -75,7 +86,7 @@
       </ul>
    </div>
 </section>
-            <section class="benefits section-offset">
+         <section class="benefits section-offset">
    <div class="container">
       <h2 class="benefits__title section__title">Что вы получите после курса</h2>
       <ul class="list-reset benefits__list">
@@ -110,7 +121,7 @@
       </ul>
    </div>
 </section>
-            <section class="trainers section-offset" id="trainers">
+         <section class="trainers section-offset" id="trainers">
    <div class="container">
       <h2 class="section-title trainers__title">Профессиональные тренеры</h2>
    </div>
@@ -197,12 +208,69 @@
       </div>
    </div>
 </section>
+         <section class="tariffs section-offset" id="tariffs">
+   <div class="container">
+      <h2 class="section__title tariffs__title">Выберите нужный пакет</h2>
+      <ul class="list-reset tariffs__list">
+         <li class="tariffs__item tariffs__item--current">
+            <h3 class="tariffs__subtitle">Pro</h3>
+            <div class="tariffs__price">20.000 ₽</div>
+            <p class="tariffs__descr">УМК по робототетхнике и программированию</p>
+            <button class="btn-reset btn tariffs__btn">Оставить заявку</button>
+         </li>
+         <li class="tariffs__item">
+            <h3 class="tariffs__subtitle">Robo</h3>
+            <div class="tariffs__price">15.000 ₽</div>
+            <p class="tariffs__descr">УМК по робототетхнике </p>
+            <button class="btn-reset btn tariffs__btn">Оставить заявку</button>
+         </li>
+         <li class="tariffs__item">
+            <h3 class="tariffs__subtitle">Prog</h3>
+            <div class="tariffs__price">10.000 ₽</div>
+            <p class="tariffs__descr">УМК по программированию</p>
+            <button class="btn-reset btn tariffs__btn">Оставить заявку</button>
+         </li>
+      </ul>
+   </div>
+</section>
+         <section class="order">
+   <div class="container order__container">
+      <div class="order__left">
+         <h2 class="order__title">Запишитесь на курс со скидкой 10%</h2>
+         <p class="order__descr">Акция действительна до 10 марта 2022 года</p>
+      </div>
+
+      <div class="order__right">
+         <form action="#" class="form order__form">
+            <label class="form__label">
+               <input type="text" name="Имя" class="input-reset form__input input-name" placeholder="Имя">
+            </label>
+            <label class="form__label">
+               <input type="tel" name="Телефон" class="input-reset form__input input-tel" placeholder="Телефон">
+            </label>
+            <label class="form__label">
+               <input type="email" name="E-mail" class="input-reset form__input input-email" placeholder="E-mail">
+            </label>
+            <button class="btn-reset btn btn--dark form__btn">Оформить заявку</button>
+         </form>
+      </div>
+   </div>
+</section>
       </main>
 
       <footer class="footer">
-  <div class="container"></div>
+   <div class="container-fluid footer__container">
+      <div class="footer__left">
+         <a href="#" class="logo">
+            <img loading="lazy" src="img/logo.svg" class="image footer__image" width="228" height="48" alt="logotype Robo-school">
+         </a>
+         <div class="copyright">© ROBO.SCHOOL</div>
+      </div>
+      <div class="footer__right">
+         <a href="tel:+78000001122" class="phone footer__phone">+7 (800-00) 0-11-22</a>
+      </div>
+   </div>
 </footer>
-
       <div class="graph-modal">
    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer-1">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
