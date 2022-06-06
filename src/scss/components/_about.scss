@@ -1,8 +1,9 @@
 .about {
-   background-color: var(--white-color);
+   background-color: var(--light-color);
 
    &__descr {
       margin: 0;
+      margin-bottom: 60px;
       max-width: 892px;
       font-weight: 400;
       font-size: 30px;
@@ -35,7 +36,6 @@
          grid-column: 4 span;
       }
    }
-
 
    &__digit {
       font-weight: 600;

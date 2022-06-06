@@ -1,5 +1,5 @@
 .benefits {
-   background-color: #F9F9F9;
+   background-color: #f9f9f9;
 
    &__list {
       display: grid;
@@ -13,6 +13,7 @@
 
    &__item {
       grid-column: 4 span;
+
       @include high-desktop {
          grid-column: 6 span;
       }
@@ -22,11 +23,11 @@
       }
    }
 
-
-
    &__subtitle {
       display: inline-flex;
       align-items: center;
+      margin: 0;
+      margin-bottom: 20px;
       font-weight: 600;
       font-size: 24px;
       line-height: 160%;
@@ -37,6 +38,6 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 160%;
-      color: var(--text-color);
+      color: var(--text-color)
    }
 }

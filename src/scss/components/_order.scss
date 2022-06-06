@@ -25,6 +25,8 @@
 
       @include mobile {
          max-width: 300px;
+         margin: 0px auto;
+         margin-bottom: 25px;
       }
    }
 
@@ -77,5 +79,13 @@
       @include mobile {
          max-width: 300px;
       }
+   }
+}
+
+.btn--dark {
+   transition: .3s all ease;
+
+   &:hover {
+      background-color: #150f37;
    }
 }

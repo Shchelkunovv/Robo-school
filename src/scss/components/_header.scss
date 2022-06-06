@@ -12,6 +12,7 @@
       @include flex-all-sb;
 
       @include high-tablet {
+         align-items: center;
          justify-content: initial;
       }
    }

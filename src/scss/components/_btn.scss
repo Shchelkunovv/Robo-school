@@ -8,4 +8,9 @@
    text-align: center;
    color: var(--white-color);
    padding: 25px 54px;
+   transition: .3s all ease;
+
+   &:hover {
+      background-color: #971014;
+   }
 }
